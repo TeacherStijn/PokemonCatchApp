@@ -1,0 +1,24 @@
+<div>
+  <h3>Avatar van jezelf</h3>
+
+  <div>
+    <img [src]="this.image" width="70px" height="75px"/>
+    <input type="file" (change)="updateImage($event)" />
+  </div>
+
+  <br/>
+
+  <div>
+    <p-dataView [value]="statsArray"> <!-- eigenlijk nu maar 1 value -->
+      <ng-template let-stat pTemplate="listItem">
+        <div class="statsDiv">
+          <strong>{{stat.naam}}</strong>: {{stat.waarde}}
+        </div>
+      </ng-template>
+    </p-dataView>
+  </div>
+
+  <h3>Wie is deze Pokemon?</h3>
+  <img src="https://www.alle-tests.nl/quiz30/picture/pic_1479497640_1.png" alt="Who is this Pokemon?"/>
+
+</div>

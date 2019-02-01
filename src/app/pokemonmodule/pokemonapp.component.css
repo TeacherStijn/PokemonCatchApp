@@ -1,0 +1,22 @@
+library-component {
+  float: left;
+  display: inline-block;
+  width: 97vw;
+
+  padding: 0.5em;
+
+  border: solid 2px orange;
+}
+
+world-component {
+  float: left;
+  width: 50%;
+  color: green;
+  padding-right: 1em;
+}
+
+avatar-component {
+  float: left;
+  width: 48%;
+  margin-left: 1em;
+}

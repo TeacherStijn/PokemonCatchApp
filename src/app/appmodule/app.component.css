@@ -1,0 +1,14 @@
+.aantal {
+  font-weight:  bold;
+  font-size:    larger;
+
+  display:      inline-block;
+
+  width:        40px;
+
+  background-color: white;
+
+  position:     absolute;
+  right:        0px;
+  bottom:       0px;
+}

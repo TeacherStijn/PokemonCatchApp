@@ -1,0 +1,19 @@
+.left {
+  display: inline-block;
+  width: 50%;
+}
+
+.right {
+  margin-left: 1em;
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+}
+
+td {
+  font-size: smaller;
+}
+
+.ui-g:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+<div>
+  <div *ngIf="status">
+    <label>
+      <p-button (click)="search() " label="Zoeken" styleClass="ui-button-success"></p-button>
+    </label>
+  </div>
+  <div *ngIf="!status">
+    <span>We zijn even offline...</span>
+  </div>
+</div>

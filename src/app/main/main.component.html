@@ -1,0 +1,31 @@
+<nav>
+  <li routerLink="zoekgebied">
+    Zoeken
+    <span class="material-icons">
+      nature_people
+    </span>
+  </li>
+  <li routerLink="overzicht">
+    Overzicht
+    <span class="material-icons">
+      vertical_split
+    </span>
+  </li>
+  <li routerLink="quiz">
+    Quiz
+    <span class="material-icons">
+      sports_esports
+    </span>
+  </li>
+  <li (click)="wissen()">
+    Wis collectie
+    <span class="material-icons">
+      delete_forever
+    </span>
+  </li>
+  <span>Huidige locatie: {{ geoLocatie$ | async }}</span>
+</nav>
+
+<main>
+  <router-outlet></router-outlet>
+</main>

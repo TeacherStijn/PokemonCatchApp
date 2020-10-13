@@ -1,0 +1,14 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li {
+  margin-right: 1em;
+}
+
+* {
+  font-family: "System UI";
+}

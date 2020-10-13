@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Pokemon open";
+  src: url("/assets/fonts/Pokemon Hollow.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Pokemon solid";
+  src: url("/assets/fonts/Pokemon Solid.ttf") format("truetype")
+}
+
+nav ul {
+  width: 100vw;
+}
+
+nav li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+
+nav li:hover {
+  color: green;
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#overzicht {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#overzicht div {
+  flex: 2;
+}
+
+h2 {
+  width: 100%;
+  height: 2em;
+  line-height: 2em;
+  font-size: 1.2em !important;
+  background-color: darkgray;
+  color: white;
+  text-align: center;
+  font-family: "Pokemon open";
+}
+
+#latestFound:hover {
+  color: green;
+  cursor: pointer;
+}

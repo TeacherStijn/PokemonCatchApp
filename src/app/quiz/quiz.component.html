@@ -1,0 +1,17 @@
+<h2>Wie is deze Pokémon?</h2>
+
+<img *ngIf="randomPokemon" [src]="randomPokemon.sprites.front_default" />
+
+<span *ngFor="let naam of randomNamenLijst">
+  <button
+    class="btn btn-info"
+    (click)="checkAntwoord(naam)"
+  >{{ naam }}</button>
+</span>
+
+<div [style.background-color]="kleur">
+  {{ meldingTekst }}
+</div>
+<div>
+Vragen goed:<span class="badge">{{ antwoorden }} / {{ vragen }}</span>
+</div>

@@ -1,0 +1,17 @@
+<div>
+  <h2>Zoeken naar Pokémon:</h2>
+  <button class="material-icons btn btn-success" (click)="find()">
+    search
+  </button>
+
+  &nbsp;
+
+  <span *ngIf="latestFound">
+    <strong>Gevonden:</strong>
+    <span id="latestFound" [routerLink]="['/overzicht', latestFound.name]">
+      {{ latestFound.name | initcap }}
+    </span>
+  </span>
+</div>
+
+<img id="map" src="assets/images/map.png" />

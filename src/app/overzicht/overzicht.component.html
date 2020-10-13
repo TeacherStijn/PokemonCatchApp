@@ -1,0 +1,40 @@
+<h2>Huidige collectie:</h2>
+
+<div id="overzicht">
+
+  <div *ngIf="selectedPokemon">
+    <strong>Momenteel geselecteerd:&nbsp;</strong>
+    <span><em>{{selectedPokemon.name | initcap }}</em></span>
+    <div>
+      <img [src]="currentFoto" [alt]="selectedPokemon.name"/>
+
+      <br/>
+
+      <button class="btn btn-danger" (click)="rotate('left')">
+        <span class="material-icons">
+          rotate_left
+        </span>
+      </button>
+      <button class="btn btn-danger" (click)="rotate('right')">
+        <span class="material-icons">
+          rotate_right
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <ul>
+    <li *ngFor="let pokemon of pokemonService.collectie">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" [src]="defaultFoto" (mouseover)="setFoto($event, pokemon.name)" alt="Afbeelding van {{ pokemon.name }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ pokemon.name | initcap }}</h5>
+          <p class="card-text">Deze Pokemon komt uit het {{ pokemon.species.name | initcap }} ras en weegt {{ pokemon.weight }}kg.</p>
+          <a href="#" (click)="select(pokemon)" class="btn btn-primary">Details</a>
+        </div>
+        <!-- if pokemon.name In lijstGevangen && count>1 -->
+        <!-- Tonen v/d upgrade button! -->
+      </div>
+    </li>
+  </ul>
+</div>

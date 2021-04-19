@@ -3,7 +3,7 @@ import {OverzichtComponent} from './overzicht/overzicht.component';
 import {ZoekgebiedComponent} from './zoekgebied/zoekgebied.component';
 import {QuizComponent} from './quiz/quiz.component';
 
-export const routes: Route[] =
+export const ROUTES: Route[] =
   [
     {
       path: '',

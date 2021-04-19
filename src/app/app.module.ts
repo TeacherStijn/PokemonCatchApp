@@ -6,7 +6,7 @@ import { MainComponent } from './main/main.component';
 import { ZoekgebiedComponent } from './zoekgebied/zoekgebied.component';
 import { OverzichtComponent } from './overzicht/overzicht.component';
 import { QuizComponent } from './quiz/quiz.component';
-import {routes} from './app.routes';
+import {ROUTES} from './app.routes';
 import {RouterModule} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import { InitcapPipe } from './initcap.pipe';
@@ -23,7 +23,7 @@ import { InitcapPipe } from './initcap.pipe';
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [],
   bootstrap: [MainComponent]
